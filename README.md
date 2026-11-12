@@ -1,0 +1,2 @@
+# PoliticalEarth
+Стратежка
