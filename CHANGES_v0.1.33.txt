@@ -1,0 +1,7 @@
+PoliticalEarth v0.1.33
+- Government: daily refresh updates only changing countdown text; rebuilds interface when law/pending/player changes or on the new month for party information.
+- Occupation overlay: converts source ID image to RGBA once and rasterizes using raw pixel bytes; reuses ImageTexture.update rather than recreating GPU texture on every territory change.
+- Division editor: reuse the 20 slot buttons on successive edits instead of recreating buttons and icons.
+- Integrated optional visual window layout importer: replace res://ui_layout.json with a file exported by the companion PoliticalEarth_UI_Editor.html. Supported panels: division designer, training, government, diplomacy, province. Coordinates are normalized to the game viewport and clamped to 0..1.
+- Existing game mechanics, balance and scenes preserved.
+LIMITATIONS: GDScript and Android interaction not executed on a local Godot 4.7.2 engine. The UI editor currently changes whole window bounds; inner panels remain controlled by game code.
